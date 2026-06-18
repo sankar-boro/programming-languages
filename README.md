@@ -1,75 +1,54 @@
 # Programming Languages
 
-A collection of in-depth books on programming languages, written as structured Markdown files with runnable code examples.
+A collection of in-depth books and courses on programming languages, written as structured Markdown and code files with runnable examples.
 
 ## Books
 
-### Rust
-**20 chapters** — `rust/`
+### Rust — `rust/`
 
-Covers ownership, borrowing, lifetimes, traits, generics, concurrency, and internals. Final project: a complete HTTP/1.1 server built using only the `std` library.
+Covers ownership, borrowing, lifetimes, traits, generics, concurrency, and internals. Final project: a complete HTTP/1.1 server built using only the `std` library. 20 chapters (`00`–`16`, `90`–`92`, `99`).
 
-| File | Topic |
+### TypeScript — `typescript/`
+
+Covers the type system deeply, from basics through mapped types, conditional types, and template literal types. Final project: a type-safe HTTP server using only Node.js's built-in `http` module. 20 chapters (`00`–`15`, `90`–`92`, `99`).
+
+### Android (AndroidX) — `android/`
+
+A structured curriculum for modern Android development with AndroidX. Organized into four progressive levels with mini-projects at each level.
+
+| Level | Focus |
+|-------|-------|
+| `level-1-beginner` | AndroidX setup, ConstraintLayout, RecyclerView, Material — mini project: Task List app |
+| `level-2-intermediate` | ViewModel, LiveData, StateFlow, Navigation, Room, Jetpack Compose intro — mini project: Notes app |
+| `level-3-advanced` | Hilt, WorkManager, Coroutines, DataStore, Testing, Paging 3 — mini project: News app |
+| `level-4-expert` | Clean Architecture, modularization, offline-first, performance, CI/CD — mini project: E-commerce module |
+
+Also includes `roadmap.md` (30/60/90/120-day learning plan) and a `capstone/` project.
+
+### Python — `python/`
+
+An 8-week course structured as runnable `.py` files, going deep on how Python works internally.
+
+| Week | Topic |
 |------|-------|
-| `00` | Title, Preface, Table of Contents |
-| `01` | Introduction — why Rust, who it's for |
-| `02` | Getting Started — toolchain, Cargo, Hello World |
-| `03` | Basic Syntax — variables, types, stack vs heap |
-| `04` | Control Flow — if, match, loops, pattern matching |
-| `05` | Functions — closures, expressions vs statements |
-| `06` | Ownership — the three rules, move semantics |
-| `07` | Borrowing — shared vs exclusive references, slices |
-| `08` | Lifetimes — annotations, elision, `'static` |
-| `09` | Structs & Enums — ADTs, Option, Result |
-| `10` | Error Handling — panic, Result, `?` operator |
-| `11` | Generics & Traits — monomorphization, trait objects |
-| `12` | Collections — Vec, HashMap, iterators |
-| `13` | Advanced Features — closures, Box, Rc, RefCell, Arc |
-| `14` | Concurrency — threads, channels, Mutex, Send/Sync |
-| `15` | Modules & Crates — visibility, Cargo workspaces |
-| `16` | Internals — MIR, vtables, zero-cost abstractions |
-| `90` | Best Practices |
-| `91` | Common Pitfalls |
-| `92` | Interview Preparation |
-| `99` | Final Project: HTTP server (std only) |
-
----
-
-### TypeScript
-**20 chapters** — `typescript/`
-
-Covers the type system deeply, from basics through mapped types, conditional types, and template literal types. Final project: a type-safe HTTP server using only Node.js's built-in `http` module.
-
-| File | Topic |
-|------|-------|
-| `00` | Title, Preface, Table of Contents |
-| `01` | Introduction — TypeScript vs JavaScript, structural typing |
-| `02` | Getting Started — tsconfig, ts-node, project setup |
-| `03` | Basic Types — primitives, `any`, `unknown`, `never`, literals |
-| `04` | Functions — overloading, generics, higher-order functions |
-| `05` | Objects & Interfaces — `interface` vs `type`, readonly, structural typing |
-| `06` | Advanced Type System — unions, narrowing, discriminated unions |
-| `07` | Generics — type parameters, constraints, `keyof` |
-| `08` | Utility Types — Partial, Pick, Omit, Record, ReturnType, Awaited |
-| `09` | Classes — access modifiers, abstract, implements, mixins |
-| `10` | Modules — ES modules, barrel files, declaration files |
-| `11` | Advanced Types — mapped types, conditional types, `infer`, template literals |
-| `12` | JS Interop — `allowJs`, `@types`, gradual migration |
-| `13` | Async Programming — Promise, async/await, generators |
-| `14` | The Compiler — tsconfig deep dive, strict flags, project references |
-| `15` | Internals — type erasure, structural typing, assignability, variance |
-| `90` | Best Practices |
-| `91` | Common Pitfalls |
-| `92` | Interview Preparation |
-| `99` | Final Project: HTTP server (Node.js `http` module only) |
+| 1 | How Python works, syntax, values, types, variables and memory model |
+| 2 | Strings, numbers, booleans — deep internals |
+| 3 | Control flow — if/else, for loops, while loops |
+| 4 | Functions — definition, arguments, return values, scope |
+| 5 | Call stack, execution frames, how Python runs code |
+| 6 | Recursion — mechanics, vs iteration, stack depth |
+| 7 | Closures, lexical scoping, nonlocal |
+| 8 | Higher-order functions, `*args`/`**kwargs`, pure vs impure functions |
 
 ---
 
 ## Other Languages
 
-Folders exist for: `android`, `c`, `clojure`, `cobol`, `cpp`, `csharp`, `dart`, `elixir`, `fortran`, `go`, `haskell`, `java`, `javascript`, `julia`, `kotlin`, `lua`, `matlab`, `perl`, `php`, `python`, `r`, `ruby`, `scala`, `swift`.
+Folders exist for: `c`, `clojure`, `cobol`, `cpp`, `csharp`, `dart`, `elixir`, `fortran`, `go`, `haskell`, `java`, `javascript`, `julia`, `kotlin`, `lua`, `matlab`, `perl`, `php`, `r`, `ruby`, `scala`, `swift`.
 
-## Format
+---
+
+## Chapter Format (Rust & TypeScript books)
 
 Each chapter follows this structure:
 - Conceptual explanation with diagrams where relevant
